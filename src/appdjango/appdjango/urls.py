@@ -28,4 +28,5 @@ urlpatterns = [
     path('create/', product_create_view),#PASO 6
     path('product/list', product_list_view),#PASO 7
     path('product/<int:id>/', product_details_view),
+    path('empleado/<int:id>/', product_details_view),
 ]
