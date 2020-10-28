@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="POST"><!-- #PASO 7 method=POST -->
+    {% csrf_token %}<!-- # PASO 7 DATA goes through-->
+    {{ form.as_p }}<!-- built in function that turns form as context into actual html form rendered as paragraph-->
+    <input type="submit" value="Guardar">
+</form>
+
+{% endblock %}
